@@ -1,0 +1,68 @@
+﻿question_id,topic,journey_stage,question_text,why_it_matters
+Q-001,Referrals and process,Pre-Diagnosis,How do I get referred to a cancer specialist?,First-step navigation; patients often don't know who to ask.
+Q-002,Referrals and process,Pre-Diagnosis,"Can my GP refer me directly, or do I need a specific test first?",Common entry-point confusion in the Dutch system.
+Q-003,Referrals and process,Diagnosis,Which hospital should I go to for my type of cancer?,Centres of expertise vary by cancer type in the Netherlands.
+Q-004,Referrals and process,Diagnosis,Can I choose which hospital to be referred to?,Patient agency question — important under Dutch insurance rules.
+Q-005,Referrals and process,Diagnosis,What happens after my GP refers me — who contacts me?,Manages anxiety about the unknown next step.
+Q-006,Waiting Times,Diagnosis,How long until I get my diagnosis after a suspicious test result?,Most-asked question per CSN community feedback.
+Q-007,Waiting Times,Diagnosis,What is a normal waiting time for an MRI or CT scan?,Calibrates expectations against legal Dutch maxima.
+Q-008,Waiting Times,Treatment,How long until I start treatment after diagnosis?,Critical anxiety point; affects mental health outcomes.
+Q-009,Waiting Times,Treatment,What if I have to wait longer than the legal maximum?,Patient rights question — Treeknormen in NL.
+Q-010,Waiting Times,Treatment,Can I get faster treatment if I go to a different hospital?,Practical decision-making question.
+Q-011,Treatment Decisions,Treatment,What treatment options do I have for my cancer?,Foundational question — answer depends on cancer type & stage.
+Q-012,Treatment Decisions,Treatment,What are the side effects of my treatment?,Quality-of-life driver; affects treatment acceptance.
+Q-013,Treatment Decisions,Treatment,Can I take part in a clinical trial?,Often-missed option; trials are listed centrally in NL.
+Q-014,Treatment Decisions,Treatment,What happens if I decide not to have treatment?,Autonomy question; rarely surfaced but important.
+Q-015,Treatment Decisions,Treatment,"How do I decide between surgery, chemotherapy, and radiotherapy?",Shared decision-making — central to Dutch cancer care policy.
+Q-016,Treatment Decisions,Treatment,Will my treatment affect my fertility?,Often forgotten in initial consultations; time-sensitive.
+Q-017,Second Opinions,Diagnosis,Can I get a second opinion before starting treatment?,Patient right under Dutch healthcare law.
+Q-018,Second Opinions,Diagnosis,How do I ask my doctor for a second opinion without offending them?,Relational barrier; very common patient hesitation.
+Q-019,Second Opinions,Diagnosis,Will my insurance cover a second opinion?,Removes the financial uncertainty barrier.
+Q-020,Second Opinions,Treatment,Where can I get an independent second opinion for my cancer type?,Practical signposting — IKNL / centres of expertise.
+Q-021,Additional Care & Support,Treatment,What psychological support is available during treatment?,Mental health support is under-used in NL cancer care.
+Q-022,Additional Care & Support,Treatment,Can I get help with practical things like meals or transport?,Day-to-day burden often outweighs medical questions.
+Q-023,Additional Care & Support,Post-Treatment,What rehabilitation programmes are available after treatment?,Onco-revalidatie programmes — well-developed in NL but under-publicised.
+Q-024,Additional Care & Support,Post-Treatment,How do I cope with fear of cancer recurrence?,Top-3 long-term concern; under-served by clinical care.
+Q-025,Additional Care & Support,Treatment,Where can I find support groups for people with my cancer?,Peer support is a CSN core service.
+Q-026,Additional Care & Support,Treatment,What financial help is available if I can't work during treatment?,WIA / UWV navigation; major source of patient stress.
+Q-027,Communication & Understanding,Diagnosis,What questions should I ask my oncologist at my first appointment?,Empowerment question; prep checklist is high-value content.
+Q-028,Communication & Understanding,Diagnosis,Can I bring someone with me to medical appointments?,Often unstated patient right; reduces information loss.
+Q-029,Communication & Understanding,Treatment,How do I get a copy of my medical records?,Patient-portal access; legal right under WGBO.
+Q-030,Communication & Understanding,Treatment,"What do common medical terms (e.g. 'metastatic', 'remission') mean?",Plain-language glossary; reduces consultation anxiety.
+Q-031,Additional Care & Support,First 48 Hours ,How do I talk to my family or children about my diagnosis?,High-emotion question; CSN already provides resources here.
+Q-032,Communication & Understanding,Pre-Diagnosis,Where can I find information about my cancer in plain English (not medical jargon)?,Core CSN mission — direct match to chatbot purpose.
+Q-033,Referrals and process,Diagnosis,Can I be referred to a specialist if I don't yet speak Dutch? ,Language barriers can delay access to specialist care and create uncertainty during the referral process.
+Q-034,Referrals and process,Diagnosis,Can I change hospitals after I have already been referred?,Patients may identify a hospital with greater expertise or shorter waiting times after referral.
+Q-035,Waiting Times,Diagnosis,How can I check waiting times at different hospitals? ,Supports informed decision-making and helps patients compare treatment options across providers. 
+Q-036,Waiting Times,Treatment,Who can help me if I think my care is being delayed?,Patients often do not know their escalation options when experiencing delays in diagnosis or treatment.
+Q-037,Treatment Decisions,Treatment,Can I receive treatment in English?,Relevant to CSN's target audience of international cancer patients navigating the Dutch healthcare system in a second language.
+Q-038,Treatment Decisions,Treatment,Will my treatment plan be discussed by a multidisciplinary team? ,Helps patients understand how treatment decisions are made within the Dutch oncology system.
+Q-039,Additional Care & Support,Treatment,Can I access support services if I do not have family in the Netherlands? ,International patients may have weaker local support networks and require additional assistance.
+Q-040,Additional Care & Support,Treatment,"What support is available for carers, partners, or family members? ",Cancer affects the wider support network and carers often require information and assistance.
+Q-041,Communication & Understanding,Treatment,Can I request an interpreter for medical appointments?,Directly linked to language accessibility and effective communication with healthcare providers.
+Q-042,Communication & Understanding,Treatment,How can I make sure I understand important medical information provided in Dutch? ,"International patients may receive important healthcare information in Dutch, creating a risk of misunderstanding diagnoses, treatment options, or next steps in their care journey."
+Q-043,Communication & Understanding,Treatment,What should I do if I disagree with my treatment recommendation? ,"Supports patient empowerment, informed consent, and shared decision-making."
+Q-044,Communication & Understanding,First 48 Hours ,What should I do immediately after receiving a cancer diagnosis? ,Patients may feel overwhelmed after diagnosis and need clear guidance on immediate next steps
+Q-045,Communication & Understanding,First 48 Hours ,Who should I contact first after my diagnosis? ,"Helps patients identify key healthcare professionals, support services, and points of contact early in their care journey."
+Q-046,Treatment Decisions,First 48 Hours ,What information should I gather before my next appointment? ,Encourages patients to prepare effectively for consultations and participate in informed decision-making.
+Q-047,Additional Care & Support,Diagnosis,Will my health insurance cover all of my cancer treatment?,International patients may be unfamiliar with Dutch health insurance rules and coverage arrangements.
+Q-048,Additional Care & Support,Treatment,What costs might I need to pay myself during treatment?,Helps patients understand potential financial implications and avoid unexpected expenses.
+Q-049,Communication & Understanding,Diagnosis,What are my rights as a patient in the Dutch healthcare system?,Patients who understand their rights are better able to participate in decisions and advocate for themselves.
+Q-050,Second Opinions,Treatment,How do I arrange a second opinion in the Netherlands?,Patients know they have the right but rarely understand the mechanics of getting a second opinion 
+Q-051,Additional Care & Support,First 48 Hours ,How can I cope emotionally during the waiting period between diagnosis and the start of treatment?,"Pre-treatment ""scanxiety"" is distinct from in-treatment psychological support and is consistently flagged as the hardest emotional phase."
+Q-052,Referrals and process,Pre-Diagnosis,Do I need to be registered with a Dutch GP to access cancer care?,"GP gatekeeping is unfamiliar to internationals; without a registered GP , the entire referral pathway stalls."
+Q-053,Referrals and process,Pre-Diagnosis,How do I register with a Dutch GP if I don't have one yet?,"Practical step that follows from Q-052; registration mechanics, waiting lists, and area-based GP availability differ from many home countries."
+Q-054,Additional Care & Support,Pre-Diagnosis,How does the mandatory deductible affect my cancer treatment costs?,Internationals frequently don't realise they pay the first ~€385–€885 each calendar year; cancer treatment triggers this immediately and recurs annually.
+Q-055,Waiting Times,Pre-Diagnosis,What are the legal maximum waiting times for cancer diagnosis and treatment in the Netherlands?,Anchors all other waiting-time questions; gives patients a benchmark to assess whether their wait is normal or escalation-worthy.
+Q-056,Communication & Understanding,First 48 Hours ,I was diagnosed or partially treated abroad — how do I transfer my care to the Netherlands?,A defining situation for internationals; affects continuity of care and prevents duplicate testing.
+Q-057,Communication & Understanding,Diagnosis,"Can I request my diagnosis letter, treatment plan, or test results in English?",Hospital practice varies widely; patients need to know what to ask for and from whom.
+Q-058,Additional Care & Support,Treatment,How do I get my cancer medication from a Dutch pharmacist?,"Many international patients are unfamiliar with the Dutch pharmacy system and the requirement to register with a single pharmacy, which may affect access to medication and continuity of care."
+Q-059,Additional Care & Support,Treatment,How do prescriptions and repeat refills work in the Netherlands?,Repeat-prescription rules and refill timing differ from many home countries and affect treatment continuity.
+Q-060,Additional Care & Support,Treatment,Can I be dismissed from my job during cancer treatment in the Netherlands?,Internationals on local contracts often don't realise Dutch law strongly protects employees during illness.
+Q-061,Additional Care & Support,Treatment,Where can I get reliable advice on nutrition and diet during cancer treatment in the Netherlands?,Distinct from rehabilitation; oncology dietitians (diëtist) are accessible via referral but under-publicised.
+Q-062,Treatment Decisions,Treatment,"	Can I travel home or abroad during my cancer treatment?","A near-universal international concern; affects insurance, treatment scheduling, and continuity of care."
+Q-063,Additional Care & Support,Treatment,"	How can I get support for the impact of cancer treatment on my sexuality, intimacy, or relationships?",Consistently under-asked but high-need; specialist sexology/oncology support exists in NL but patients rarely know to ask.
+Q-064,Additional Care & Support,Post-Treatment,Who follows up with me after my active cancer treatment ends?,A recognised cliff-edge moment; patients often feel abandoned at end of treatment when intensive contact stops.
+Q-065,Additional Care & Support,Post-Treatment,Will I receive a survivorship care plan after treatment?,Nazorgplan provision varies between hospitals; patients should know what they're entitled to.
+Q-066,Referrals and process,Post-Treatment,Who do I contact if my cancer comes back or progresses?,Recurrence triggers a different (faster) pathway than initial diagnosis
+Q-067,Additional Care & Support,Post-Treatment,What palliative care and hospice options are available in the Netherlands?,Dutch palliatieve zorg infrastructure differs significantly from many home countries and is largely unknown to internationals.
