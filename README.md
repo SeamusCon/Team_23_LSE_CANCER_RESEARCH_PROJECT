@@ -91,3 +91,16 @@ The pipeline relies entirely on Python 3.13+ and utilizes the following key libr
 
 
 Set up guide
+
+## 🛠️ Installation & Setup Guide
+
+Follow these steps to configure your local environment and run the scraping and data consolidation pipelines.
+
+### 1. Clone the Repository
+Open your terminal or command prompt and clone the project repository:
+```bash
+git clone [https://github.com/SeamusCon/Team_23_LSE_CANCER_RESEARCH_PROJECT.git](https://github.com/SeamusCon/Team_23_LSE_CANCER_RESEARCH_PROJECT.git)
+cd Team_23_LSE_CANCER_RESEARCH_PROJECT
+
+Install the following libraries of not already present 
+pip install pandas numpy beautifulsoup4 requests lxml deep-translator openpyxl
