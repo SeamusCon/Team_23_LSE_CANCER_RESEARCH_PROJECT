@@ -58,6 +58,31 @@ The structured output is designed to be integrated into a future interface or ch
 2. **Clinical Filter Gate:** Content is automatically screened against case-insensitive oncology parameters (*kanker*, *oncologie*, *tumor*, *palliatief*). Administrative headers, cookies, and boilerplate scripts are fully decomposed.
 3. **Linguistic Clean-Up & Translation:** Repairs character encoding corruptions (Mojibake matrix remediation converting Windows-1252/UTF-8 compression artifacts like `‚Ä¢` to `•`). Wide matrix fields are unpivoted and safely translated using automated sentence-aware chunk boundaries (max 4,500 characters per segment).
 4. **Semantic Question Bank Linkage:** Evaluates text segments against the approved CSN reference bank using token intersection scoring and conditional keyword weight boosts (e.g., matching explicit "second opinion" or "palliative" concepts) to attach standardized Question IDs.
+   
+
+## 🌍 Automated Translation Architecture
+
+To map localized Dutch medical text seamlessly over to CSN's English-standard Patient Question Bank, the pipeline incorporates an automated localization layer powered by the `deep-translator` Google Engine. 
+
+Because raw scraped clinical entries contain high-density paragraphs that exceed standard cloud payload caps, the scripts employ a defensive, resource-conscious translation framework:
+
+* **Sentence-Aware Chunks:** The translation engine automatically tokenizes text blocks larger than 4,500 characters. Instead of blindly cutting strings mid-word, it scans backward for natural sentence delimiters (`.`, `?`, `!`) to maintain linguistic context and avoid API payload faults.
+* **API Call Conservation:** To drastically reduce runtime and prevent hitting Google API rate limits, the handler operates a conditional check that skips `N/A`, empty, or purely numerical cells. This mechanism saves hundreds of unnecessary server calls during large-batch iterations.
+* **Rate-Limit Throttling:** The loops enforce an explicit `time.sleep(0.5)` gap between block transmissions to maintain a stable, polite execution profile that avoids IP bans or dropped connections.
+
+---
+
+## 📊 Analytics & BI Integration (Tableau Optimization)
+
+To prevent long-form medical strings from breaking down rows or triggering misalignments inside data visualization software, the consolidation pipeline executes a localized formatting utility prior to export:
+
+1. **Line Break Transformation:** Programmatic paragraph breaks (`\n` or `\r`) naturally force data engines to interpret text as a new record entry, disrupting standard spreadsheets. The pipeline sweeps text strings and replaces raw breaks with safe HTML breaks (`<br>`), locking text seamlessly inside a single continuous dashboard block.
+2. **Whitespace Collapsing:** Regular expressions automatically compress multi-padded spaces created by translation boundaries into unified, single spaces.
+3. **Aggressive Quoting Constraints:** Files are exported using strict text encapsulation parameters (`quoting=1`), which wraps every single column cell in protective quotation layers. This shields punctuation marks, commas, and formatting strings in the medical content from corrupting the database schema.
+
+**Final Deliverable for Tableau Display:** `grouped_cancer_data_tableau_ready.csv`
+
+---
 
 ---
 
@@ -73,6 +98,22 @@ The pipeline relies entirely on Python 3.13+ and utilizes the following key libr
 | **Language Processing** | `deep-translator`, `re`, `html` | Google Translate API execution, sentence chunk splitting, HTML entity resolution, and regex taxonomy cleaning. |
 | **Data Integrity** | `hashlib`, `json` | SHA-256 and MD5 cryptographic content fingerprinting to support automated change-tracking. |
 | **Environment & Logging**| `datetime`, `os`, `logging`, `urllib.parse` | Precise timestamp generation, local physical cache creation, system error handling, and absolute URL string resolution. |
+
+
+Set up guide
+
+## 🛠️ Installation & Setup Guide
+
+Follow these steps to configure your local environment and run the scraping and data consolidation pipelines.
+
+### 1. Clone the Repository
+Open your terminal or command prompt and clone the project repository:
+```bash
+git clone [https://github.com/SeamusCon/Team_23_LSE_CANCER_RESEARCH_PROJECT.git](https://github.com/SeamusCon/Team_23_LSE_CANCER_RESEARCH_PROJECT.git)
+cd Team_23_LSE_CANCER_RESEARCH_PROJECT
+
+Install the following libraries of not already present 
+pip install pandas numpy beautifulsoup4 requests lxml deep-translator openpyxl
 
 ---
 
@@ -90,17 +131,4 @@ The pipeline relies entirely on Python 3.13+ and utilizes the following key libr
 └── README.md                              # Project documentation
 
 
-Set up guide
 
-## 🛠️ Installation & Setup Guide
-
-Follow these steps to configure your local environment and run the scraping and data consolidation pipelines.
-
-### 1. Clone the Repository
-Open your terminal or command prompt and clone the project repository:
-```bash
-git clone [https://github.com/SeamusCon/Team_23_LSE_CANCER_RESEARCH_PROJECT.git](https://github.com/SeamusCon/Team_23_LSE_CANCER_RESEARCH_PROJECT.git)
-cd Team_23_LSE_CANCER_RESEARCH_PROJECT
-
-Install the following libraries of not already present 
-pip install pandas numpy beautifulsoup4 requests lxml deep-translator openpyxl
